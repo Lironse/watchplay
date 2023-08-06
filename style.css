@@ -1,0 +1,54 @@
+body {
+    background-color: #0d041a;
+}
+
+#header {
+    color: pink;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 8rem;
+    padding-left: 3rem;
+}
+
+#desc {
+    color: pink;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+#desc-box {
+    width: 50%;
+    padding-bottom: 5rem;
+}
+
+#download-button {
+    background-color: pink;
+    border: none;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    border-radius: 10px;
+    height: 5rem;
+    width: 24rem;
+}
+
+#download-button:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.kick-text {
+    color: lightgreen;
+}
+
+.twitch-text {
+    color: purple;
+}
+
+.yt-text {
+    color: red;
+}

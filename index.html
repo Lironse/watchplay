@@ -10,17 +10,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap">
     <title>WatchPlay</title>
 </head>
+
 <body>
-    <h1 id="header">WATCH WHILE YOU WAIT!</h1>
-    <div id="desc-box">
-        <h2 id="desc">Watch streams from
-            <span class="twitch-text">Twitch</span>,
-            <span class="kick-text">Kick</span> , and
-            <span class="yt-text">Youtube</span> while waiting on boring parts of your game!
-        </h2>
+    <header>
+        <nav>
+            <ul class="header-buttons">
+                <li><a href="./index.html" draggable="false">Download</a></li>
+                <li><a href="./about.html" draggable="false">About</a></li>
+                <li><a href="./help.html" draggable="false">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="textimg">
+        <div id="left-text">
+            <h1 id="header">WATCH WHILE YOU WAIT!</h1>
+            <div id="desc-box">
+                <h2 id="desc">Watch streams from
+                    <span class="twitch-text">Twitch</span> and
+                    <span class="kick-text">Kick</span>
+                    while waiting on boring parts of your game!
+                </h2>
+            </div>
+        </div>
+        <img id="im1" src="image.png" draggable="false">
     </div>
-    <center>   
+    <center>
         <button id="download-button" onclick="download()">DOWNLOAD NOW</button>
     </center>
-    </body>
+</body>
 </html>

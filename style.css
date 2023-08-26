@@ -1,39 +1,52 @@
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: local('GT Walsheim Pro Condensed Black'), local('GT-Walsheim-Pro-Condensed-Black'),
+        url('GTWalsheimPro-CondensedBlack.woff2') format('woff2'),
+        url('GTWalsheimPro-CondensedBlack.woff') format('woff'),
+        url('GTWalsheimPro-CondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
 body {
-    background-color: #0d041a;
+    background: rgb(2,0,36);
+    background: linear-gradient(27deg, rgba(2,0,36,1) 0%, rgba(147,33,224,1) 100%); 
+    background-attachment:fixed;
+    height:100%;
+    margin: 0;
+    font-family: 'GT Walsheim Pro Condensed Black';
 }
 
 #header {
-    color: pink;
-    font-family: 'Paytone One', sans-serif;
+    color: rgb(250, 241, 255);
     font-weight: 700;
     font-size: 4rem;
-    padding-top: 8rem;
-    padding-left: 3rem;
+    padding-top: 8rem 3rem;
+    max-width: 100%;
 }
 
 #desc {
     color: pink;
-    font-family: 'Paytone One', sans-serif;
     font-weight: 200;
-    font-size: 2rem;
-    padding-top: 3rem;
-    padding-left: 3rem;
-}
-
-#desc-box {
-    width: 50%;
-    padding-bottom: 5rem;
+    font-size: 5vh;
+    padding: 3rem;
+    max-width: 60%;
 }
 
 #download-button {
     background-color: pink;
     border: none;
-    font-family: 'Paytone One', sans-serif;
     font-weight: 200;
     font-size: 2rem;
     border-radius: 10px;
-    height: 5rem;
-    width: 24rem;
+    height: auto;
+    width: 100%;
+    max-width: 24rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    margin-bottom: 15vh;
 }
 
 #download-button:hover {
@@ -42,13 +55,85 @@ body {
 }
 
 .kick-text {
-    color: lightgreen;
+    color: #00e701;
 }
 
 .twitch-text {
-    color: purple;
+    color: #9146FF;
 }
 
 .yt-text {
     color: red;
+}
+
+/* Style the header */
+#header {
+    color: rgb(250, 241, 255);
+    font-weight: 700;
+    font-size: 4rem;
+    padding: 8rem 3rem;
+    max-width: 100%;
+}
+
+/* Style the navigation list */
+.header-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    gap: 20px; /* Adjust the spacing between buttons as needed */
+}
+
+/* Style the navigation items (buttons) */
+.header-buttons li {
+    display: inline;
+}
+
+/* Style the navigation links (button text) */
+.header-buttons a {
+    text-decoration: none;
+    font-family: 'GT Walsheim Pro Condensed Black', sans-serif;
+    font-weight: 200;
+    color: white; /* Text color for the buttons */
+    padding: 10px 20px; /* Add padding to the buttons for spacing */
+    border: 1px solid white; /* Add a border around the buttons */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+}
+
+/* Hover effect for buttons */
+.header-buttons a:hover {
+    background-color: white;
+    color: #333; /* Change the text color on hover */
+}
+
+#disc {
+    color: #5865F2;
+    text-decoration: none;
+}
+
+#disc:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+}
+
+#im1 {
+    border-radius: 15px;
+    transition: .6s ease;
+    /* float:right; */
+    /* margin-left:20px; */
+    object-fit: contain;
+    transform: scale(.7);
+    width: 100%;
+}
+
+#im1:hover {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    transition: .6s ease;
+}
+
+#textimg {
+    display: flex;
+    justify-content: center;
 }
